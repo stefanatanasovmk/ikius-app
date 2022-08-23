@@ -1,7 +1,7 @@
 import postCardStyles from "../styles/PostCards.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import Date from "../components/date";
+import Date from "./date";
 
 export default function PostCards({ id, date, title, image }) {
   return (
@@ -19,7 +19,7 @@ export default function PostCards({ id, date, title, image }) {
         </Link>
         <br />
         <small className={postCardStyles.blogDate}>
-          <Date dateString={date} />
+          <Date dateString={date}></Date>
         </small>
       </div>
     </div>

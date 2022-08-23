@@ -3,7 +3,7 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import postCardStyles from "../styles/PostCards.module.css";
 import { getSortedPostsData } from "../lib/posts";
-import PostCards from "./PostCards";
+import PostCards from "../components/PostCards";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
