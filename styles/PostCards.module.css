@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.blogPost {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: calc(33% - 1rem);
+  margin: 0 0 1rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.titleAndDateContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.blogTitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+}
+.blogThumbnail {
+  flex: 1;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.blogDate {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  align-self: flex-end;
+  color: #8a8a8a;
+}
+@media (max-width: 700px) {
+  .blogPost {
+    width: 45vw;
+  }
+}
+@media (max-width: 450px) {
+  .blogPost {
+    width: 90vw;
+  }
+}
