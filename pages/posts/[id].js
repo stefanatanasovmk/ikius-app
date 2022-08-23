@@ -11,7 +11,8 @@ import Link from "next/link";
 import Image from "next/image";
 import postStyle from "../../styles/PostStyle.module.css";
 import postCardStyles from "../../styles/PostCards.module.css";
-import PostCards from "../postCards";
+import PostCards from "../PostCards";
+
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
   const allPostsData = getSortedPostsData();

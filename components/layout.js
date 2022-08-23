@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
-import Footer from "../pages/footer";
+import Footer from "../pages/Footer";
 
 const name = "Stefan Atanasov";
 export const siteTitle = "Next.js Sample Website";
