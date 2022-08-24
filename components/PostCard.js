@@ -19,10 +19,10 @@ export default function PostCard({ id, date, title, image }) {
 
       <div className={postCardStyles.titleAndDateContainer}>
         <Link href={`/posts/${id}`}>
-          <a className={postCardStyles.blogTitle}>{title}</a>
+          <a className={postCardStyles.postTitle}>{title}</a>
         </Link>
         <br />
-        <small className={postCardStyles.blogDate}>
+        <small className={postCardStyles.postDate}>
           <Date dateString={date}></Date>
         </small>
       </div>
