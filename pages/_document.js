@@ -10,14 +10,14 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta property="og:url" content="https://www.example.com" />
-          <meta property="og:title" content="Open Graph Title" />
-          <meta property="og:description" content="Open Graph Description" />
+          <meta property="og:url" content="https://ikius-app.vercel.app/" />
+          <meta property="og:title" content="Stefan's blog" />
           <meta
-            property="og:image"
-            content="https://www.example.com/og-image.jpg"
+            property="og:description"
+            content="Stefan Atanasov personal blog page"
           />
-          <meta property="og:site_name" content="YourSiteName" />
+          <meta property="og:image" content="/image/profile.png" />
+          <meta property="og:site_name" content="Stefan's Blog" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@site" />
           <meta name="twitter:creator" content="@handle" />
