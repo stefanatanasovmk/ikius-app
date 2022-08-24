@@ -7,13 +7,14 @@ export default function PostCard({ id, date, title, image }) {
   return (
     <div className={postCardStyles.blogPost} key={id}>
       <Link href={`/posts/${id}`}>
-        <Image
-          width="100%"
-          height="150%"
-          src={image}
-          alt={title}
-          className={postCardStyles.blogThumbnail}
-        />
+        <a className={postCardStyles.thumbnailContainer}>
+          <Image
+            layout="fill"
+            src={image}
+            alt={title}
+            className={postCardStyles.thumbnail}
+          />
+        </a>
       </Link>
 
       <div className={postCardStyles.titleAndDateContainer}>
