@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import postCardStyles from "../styles/PostCards.module.css";
+import postCardStyles from "../styles/PostCard.module.css";
 import { getSortedPostsData } from "../lib/posts";
-import PostCards from "../components/PostCards";
+import PostCard from "../components/PostCard";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <div className={postCardStyles.container}>
           {allPostsData.map(({ id, date, title, image }) => (
-            <PostCards
+            <PostCard
               id={id}
               date={date}
               title={title}

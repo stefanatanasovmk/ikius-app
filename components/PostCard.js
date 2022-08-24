@@ -1,9 +1,9 @@
-import postCardStyles from "../styles/PostCards.module.css";
+import postCardStyles from "../styles/PostCard.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Date from "./date";
 
-export default function PostCards({ id, date, title, image }) {
+export default function PostCard({ id, date, title, image }) {
   return (
     <div className={postCardStyles.blogPost} key={id}>
       <Link href={`/posts/${id}`}>

@@ -10,8 +10,8 @@ import utilStyles from "../../styles/utils.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import postStyle from "../../styles/PostStyle.module.css";
-import postCardStyles from "../../styles/PostCards.module.css";
-import PostCards from "../../components/PostCards";
+import postCardStyles from "../../styles/PostCard.module.css";
+import PostCard from "../../components/PostCard";
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -77,7 +77,7 @@ export default function Post({ postData, allPostsData }) {
       </article>
       <div className={postCardStyles.container}>
         {allPostsData.map(({ id, date, title, image }) => (
-          <PostCards id={id} date={date} title={title} image={image} key={id} />
+          <PostCard id={id} date={date} title={title} image={image} key={id} />
         ))}
       </div>
     </Layout>
