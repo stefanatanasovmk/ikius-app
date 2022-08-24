@@ -6,13 +6,16 @@ import Date from "./date";
 export default function PostCards({ id, date, title, image }) {
   return (
     <div className={postCardStyles.blogPost} key={id}>
-      <Image
-        width="100%"
-        height="150%"
-        src={image}
-        alt={title}
-        className={postCardStyles.blogThumbnail}
-      />
+      <Link href={`/posts/${id}`}>
+        <Image
+          width="100%"
+          height="150%"
+          src={image}
+          alt={title}
+          className={postCardStyles.blogThumbnail}
+        />
+      </Link>
+
       <div className={postCardStyles.titleAndDateContainer}>
         <Link href={`/posts/${id}`}>
           <a className={postCardStyles.blogTitle}>{title}</a>

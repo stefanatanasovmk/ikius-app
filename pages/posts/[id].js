@@ -44,7 +44,7 @@ export default function Post({ postData, allPostsData }) {
             <a>
               <Image
                 priority
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 className={utilStyles.borderCircle}
                 height="30%"
                 width="30%"
@@ -62,15 +62,7 @@ export default function Post({ postData, allPostsData }) {
           </small>
         </div>
       </div>
-      <div
-        style={{
-          width: "100%",
-          height: "30vh",
-          position: "relative",
-          left: "0px",
-          top: "0px",
-        }}
-      >
+      <div className={postStyle.imageContainer}>
         <Image src={postData.image} layout="fill" />
       </div>
       <Link href="/">

@@ -5,6 +5,6 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["upload.wikimedia.org"],
+    domains: ["upload.wikimedia.org", "cdn.pixabay.com"],
   },
 };

@@ -5,7 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Footer from "./Footer";
 
 const name = "Stefan Atanasov";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "Stefan's blog";
 
 export default function Layout({ children, home }) {
   return (
@@ -13,7 +13,10 @@ export default function Layout({ children, home }) {
       <div className={styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="My personal blog page" />
+          <meta
+            name="description"
+            content="Stefan Atanasov personal blog page"
+          />
           <meta
             property="og:image"
             content={`https://og-image.vercel.app/${encodeURI(
@@ -33,14 +36,14 @@ export default function Layout({ children, home }) {
               <h1>Minun blogini</h1>
               <Image
                 priority
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 className={utilStyles.borderCircle}
                 height={144}
                 width={144}
                 alt={name}
               />
               <p className={utilStyles.introductionParagraph}>
-                Olen Stefan Atansov, olen koodari
+                Olen {name}, olen koodari
               </p>
             </>
           ) : (
